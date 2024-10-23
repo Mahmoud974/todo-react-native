@@ -5,6 +5,7 @@ interface Todo {
   priority: "low" | "medium" | "high";
   status: "pending" | "in-progress" | "completed";
   createdAt: string;
+  category: string;
 }
 
 export const todos: Todo[] = [
@@ -15,6 +16,7 @@ export const todos: Todo[] = [
     priority: "medium",
     status: "pending",
     createdAt: "10 days ago",
+    category: "travail",
   },
   {
     id: 1,
@@ -23,6 +25,7 @@ export const todos: Todo[] = [
     priority: "low",
     status: "in-progress",
     createdAt: "5 days ago",
+    category: "loisir",
   },
   {
     id: 2,
@@ -31,54 +34,69 @@ export const todos: Todo[] = [
     priority: "high",
     status: "in-progress",
     createdAt: "2 days ago",
+    category: "travail",
   },
   {
     id: 3,
-    title: "Appeler le plombier",
-    description: "Problème de fuite dans la salle de bain.",
-    priority: "high",
-    status: "completed",
-    createdAt: "7 days ago",
-  },
-  {
-    id: 4,
-    title: "Envoyer des emails",
-    description: "Répondre aux emails en attente pour le projet en cours.",
+    title: "Lire un livre sur la gestion financière",
+    description: "Terminer le chapitre sur les investissements.",
     priority: "medium",
     status: "pending",
     createdAt: "1 day ago",
+    category: "éducation",
   },
-
+  {
+    id: 4,
+    title: "Rendez-vous chez le médecin",
+    description: "Contrôle de santé général.",
+    priority: "high",
+    status: "pending",
+    createdAt: "3 days ago",
+    category: "santé",
+  },
   {
     id: 5,
-    title: "Préparer le dîner",
-    description: "Faire des pâtes et une salade pour le dîner.",
+    title: "Planifier les vacances d'été",
+    description: "Chercher des destinations et des hébergements.",
     priority: "medium",
     status: "pending",
-    createdAt: "3 hours ago",
+    createdAt: "1 week ago",
+    category: "voyages",
   },
   {
     id: 6,
-    title: "Faire du sport",
-    description: "Aller à la salle de sport pour une séance d'entraînement.",
+    title: "Faire du bénévolat au refuge",
+    description: "Aider à la distribution de nourriture.",
     priority: "low",
     status: "pending",
-    createdAt: "1 hour ago",
+    createdAt: "2 days ago",
+    category: "bénévolat",
   },
   {
     id: 7,
-    title: "Lire un livre",
-    description: "Finir le livre que j'ai commencé la semaine dernière.",
+    title: "Écrire un article pour le blog",
+    description: "Rédiger sur les tendances technologiques.",
     priority: "medium",
     status: "in-progress",
-    createdAt: "2 days ago",
+    createdAt: "3 days ago",
+    category: "travail",
   },
   {
     id: 8,
-    title: "Planifier le week-end",
-    description: "Organiser les activités pour le week-end prochain.",
+    title: "Participer à un cours de yoga",
+    description: "Améliorer la flexibilité et la santé mentale.",
+    priority: "medium",
+    status: "pending",
+    createdAt: "1 week ago",
+    category: "santé",
+  },
+  {
+    id: 9,
+    title: "Préparer un dîner spécial pour la famille",
+    description: "Préparer un plat de pâtes avec une salade.",
     priority: "low",
     status: "pending",
-    createdAt: "4 days ago",
+    createdAt: "2 hours ago",
+    category: "loisir",
   },
 ];
