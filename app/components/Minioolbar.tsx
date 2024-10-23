@@ -21,7 +21,7 @@ export default function MiniToolbar() {
       </TouchableOpacity>
       <TouchableOpacity className="items-center">
         <Calendar color="white" size={24} />
-        <Text className="text-white">Calendar</Text>
+        <Text className="text-white">Réglages</Text>
       </TouchableOpacity>
     </View>
   );

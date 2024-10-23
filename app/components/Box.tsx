@@ -33,11 +33,11 @@ export default function Box({ item }: any) {
 
     switch (status) {
       case "pending":
-        return `${baseStyle} bg-red-500`;
+        return `${baseStyle} bg-red-500 `;
       case "In-progress":
-        return `${baseStyle} bg-green-600`;
+        return `${baseStyle} bg-green-600 `;
       case "completed":
-        return `${baseStyle} bg-blue-600`;
+        return `${baseStyle} bg-blue-600 `;
       default:
         return baseStyle;
     }
